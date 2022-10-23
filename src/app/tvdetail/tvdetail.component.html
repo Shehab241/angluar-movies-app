@@ -1,0 +1,17 @@
+<div class="row">
+    <div class="col-md-9">
+        <img class="w-100 " [src]="imgperfix+tv.backdrop_path" alt="">
+        <h1>{{tv['original_name']}}</h1>
+        <p class="">{{tv['overview']}}</p>
+    </div>
+
+    <div class="col-md-3">
+        
+        <div *ngFor="let m of topTen" class="movie-item">
+                <img class="w-75" [src]="imgperfix+m.backdrop_path">
+                <h5>
+                    {{m['original_name']}}
+                </h5>
+        </div>
+    </div>
+</div>

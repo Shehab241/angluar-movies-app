@@ -1,0 +1,22 @@
+<div *ngIf="isloading==true" class="row ">
+    <div class="col-md-9">
+        <img class="w-100 " [src]="imgperfix+movie.backdrop_path" alt="">
+        <div class="moviedetail">
+            <h1>{{movie['original_title']}}</h1>
+            <p class="">{{movie['overview']}}</p>
+        </div>
+    </div>
+
+
+
+    <div class="col-md-3">
+        
+        <div *ngFor="let m of topten" class="movie-item">
+                <img class="w-75" [src]="imgperfix+m.backdrop_path">
+                <h5>
+                    {{m['title']}}
+                </h5>
+        </div>
+    </div>
+
+</div>

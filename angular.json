@@ -28,9 +28,12 @@
               "src/assets"
             ],
             "styles": [
+              "../rev-movie/node_modules/bootstrap/dist/css/bootstrap.min.css",
               "src/styles.scss"
             ],
-            "scripts": []
+            "scripts": [
+              "../rev-movie/node_modules/bootstrap/dist/js/bootstrap.min.js"
+            ]
           },
           "configurations": {
             "production": {
